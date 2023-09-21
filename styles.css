@@ -1,79 +1,187 @@
-/* Reset some default styles */
-body, h1, h2, ul, li {
-    margin: 0;
-    padding: 0;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+body,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Style the navigation bar */
 nav {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .menu-icon {
-    display: none; /* Hide the menu icon by default for larger screens */
-    cursor: pointer;
+  display: none; /* Hide the menu icon by default for larger screens */
+  cursor: pointer;
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .menu li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
-
-/* Style the header */
 header {
-    background-color: #f2f2f2;
-    padding: 50px 0;
-    text-align: center;
+  height: 50vh;
+  width: 100vw;
+  background-image: url('./images/waterfront.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center text and buttons */
+  align-items: center; /* Horizontally center text and buttons */
+  text-align: center;
 }
 
-header h1 {
-    font-size: 36px;
+.header-content {
+  margin-bottom: 20px;
 }
 
-/* Style the recipe section (customize as needed) */
-.recipes {
-    padding: 40px 0;
-    background-color: #fff;
+.header h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
 }
 
-/* Style the footer */
+.header-buttons {
+  display: flex;
+  flex-direction: column; /* Arrange buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1f2937;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px; /* Add margin to separate buttons */
+  border-radius: 5px;
+}
+
+/* Center the .main_header container */
+.main_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0; /* Adjust the padding as needed */
+}
+
+/* Style the "Chef's Favorite" heading */
+.main_header h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+/*Images*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; /* Change 'normal' to 'center' to vertically center */
+}
+
+.flex-items {
+  display: flex; /* Change 'block' to 'flex' */
+  flex-grow: 1; /* Allow the images to grow to fill the space */
+  flex-shrink: 1;
+  flex-basis: 0; /* Change 'auto' to '0' */
+  align-self: center; /* Vertically center each image within its container */
+  order: 0;
+}
+
+.flex-items img {
+  max-width: 100%; /* Ensure the image fits inside its parent container */
+  height: auto; /* Maintain the aspect ratio */
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 7em 13em;
+}
+
+.quote p {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+.quote em {
+    font-size: 15px;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 13em;
+}
+
+.sucontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 3em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container button {
+    border: 2px solid #FFF;
+}
+
+strong {
+    font-size: 24px;
+    color: #FFF;
+}
+
+
+
 footer {
     background-color: #333;
     color: #fff;
